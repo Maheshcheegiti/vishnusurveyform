@@ -232,8 +232,8 @@ form button:hover{
 }
 @media screen and (max-width:500px){
     form img{
-        left: 22%;
-        right: 78%;
+        left: 19%;
+        right: 81%;
     }
     header img{
         height:70px;
