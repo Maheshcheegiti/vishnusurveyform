@@ -80,6 +80,7 @@
                 </datalist> <br><br>
             <input required type="checkbox" id="agree" name="agree" value="YES">
             <label for="agree">I Agree with all Terms & Coditions</label>
+            <input id="today" type="text" name="time" hidden>
         </div>
         <br>
         <button> <p>SUBMIT</p></button>
@@ -87,6 +88,14 @@
     </form>
     <p id="copyright">&copy;|Mahesh Cheegiti</p>
     <script>
+        var d = new Date,
+            dformat = [d.getMonth() + 1,
+                d.getDate(),
+                d.getFullYear()
+            ].join('/') + ' ' + [d.getHours(),
+                d.getMinutes(),
+                d.getSeconds()
+            ].join(':');
         var form = document.getElementById('sheetdb-form');
   form.addEventListener("submit", e => {
     e.preventDefault();
